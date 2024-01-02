@@ -11,6 +11,10 @@ We create benchmark long document datasets (by pre-processing ACL Anthology 2014
 - **WIKI (Wikipedia)**: We use the [Wikipedia dump](https://dumps.wikimedia.org/enwiki/latest/enwiki-latestpages-articles.xml.bz2), and adopt a similar methodology proposed by Jiang et al. (Jiang et al., 2019) to process this data. From the Wikipedia dump containing 6 million articles, we randomly sampled 250,000 articles along with the articles present in their outlinks. We create a dataset of similar Wikipedia articles by assuming that similar articles have similar outgoing links. The Jaccard similarity between the outgoing links of the source and the target articles is calculated. If the Jaccard similarity > 0.5, the documents are assumed to be similar, otherwise they are considered dissimilar. Only articles with two or more similar articles are selected. We then randomly sample 15,000 research paper pairs for our experiment.
 
 
+## Dataset Access
+
+Please contact the authors (Akshita Jha, <akshitajha@vt.edu>) directly for access to the complete dataset. 
+
 ## Citation
 
 Please cite the below papers, if you use the dataset or the proposed methodology:
